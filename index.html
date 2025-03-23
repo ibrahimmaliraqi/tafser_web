@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفسير القرآن الكريم - الخلاصة من تفسير الطبري</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>الخلاصة من تفسير الطبري</h1>
+            <p class="subtitle">تفسير القرآن الكريم صوتياً</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="ابحث عن سورة...">
+            </div>
+
+            <div class="content-container">
+                <div class="surahs-list" id="surahsList">
+                    <!-- قائمة السور ستضاف هنا -->
+                </div>
+                
+                <div class="tafsir-container" id="tafsirContainer">
+                    <h2 id="selectedSurahTitle" class="selected-surah-title"></h2>
+                    <div class="tafsir-sections" id="tafsirSections">
+                        <!-- مقاطع التفسير ستضاف هنا -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="audio-player" id="audioPlayer">
+            <div class="player-content">
+                <h3 class="current-playing">جاري التشغيل: <span id="currentTrackName">-</span></h3>
+                <audio id="audioElement" controls></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
